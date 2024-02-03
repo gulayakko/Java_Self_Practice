@@ -11,13 +11,13 @@ public class ArrayElements {
         // 1.2 Assign values from 1 to 100 to the indexes of the array.
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers [i]= i+1;
+            numbers[i] = i + 1;
 
         }
 
         // 1.3 Display the array elements in a single line separated by spaces.
 
-        for (int number: numbers){
+        for (int number : numbers) {
             System.out.println(number + " ");
         }
 
@@ -25,7 +25,7 @@ public class ArrayElements {
 
         int[] reverseArray = new int[numbers.length];
 
-        for (int i = numbers.length-1, j =0;  i >=0; i--, j++) {
+        for (int i = numbers.length - 1, j = 0; i >= 0; i--, j++) {
             reverseArray[j] = numbers[i];
             System.out.println(reverseArray[j]);
 
@@ -33,19 +33,15 @@ public class ArrayElements {
 
         //1.5 Display all evenly divisible elements by 5 in a single line separated by spaces.
 
-        for (int i = 0; i < numbers.length ; i++) {
+        for (int i = 0; i < numbers.length; i++) {
 
-            if (numbers[i] % 5 == 0);
+            if (numbers[i] % 5 == 0) ;
             System.out.println(numbers[i]);
 
 
         }
 
-
-
-
-        }
-
+    }
 
     }
 
