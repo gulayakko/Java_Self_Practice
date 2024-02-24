@@ -1,25 +1,37 @@
 package day16_practice_tasks;
 
+import java.io.FilterOutputStream;
 import java.util.*;
 
 public class RemovePalindromes {
 
     public static void main(String[] args) {
 
-        Queue<String> queue = new PriorityQueue<>();
+        List<String> list = new ArrayList<>();
 
-        queue.addAll(Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak",
+        list.addAll(Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak",
                 "reviver", "racecar", "madam"));
 
-        System.out.println(queue);
+        System.out.println(list);
 
-        queue.remove();
-        System.out.println(queue);
+        String reverseList = new StringBuilder(list.toString()).reverse().toString();
 
+        Iterator<String > it = list.iterator();
+        while (it.hasNext()){
+            String palin = it.next();
+            if (reverseList.contains(palin)){
+                it.remove();
+            }
+        }
+
+        System.out.println(list);
 
 
 
 
 
     }
-}
+
+
+
+    }
